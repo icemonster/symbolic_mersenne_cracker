@@ -40,7 +40,6 @@ class Untwister:
         '''
             This method models MT19937 function as a Z3 program
         '''
-        name = next(SYMBOLIC_COUNTER)
         MT = [i for i in MT] #Just a shallow copy of the state
 
         for i in range(n):
